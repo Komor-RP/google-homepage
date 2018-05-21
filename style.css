@@ -27,19 +27,19 @@ p, a, li {
 .container .top ul {
   display: inline;
 }
-ul.left {
+.top ul.left {
   float: left;
   margin-left: 10px;
   padding-top: 5px;
 }
-ul.right {
+.top ul.right {
   float: right;
 }
-ul.right div.first {
+.top ul.right div.first {
   display: inline-block;
   padding-top:5px;
 }
-ul.right div.second {
+.top ul.right div.second {
   display: inline;
   float: right;
 }
@@ -104,4 +104,51 @@ ul.right div.second {
 }
 .middle .search input {
   width: 500px;
+}
+.middle .searchButtons {
+  text-align: center;
+  padding-top: 30px;
+}
+.middle .searchButtons button {
+  height: 35px;
+  padding: 0 15px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  border: 1px solid #f2f2f2;
+}
+.middle .searchButtons button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+
+.container .bottom {
+  position: fixed;
+  bottom:0;
+}
+.container .bottom li{
+  color: #000;
+  display: inline;
+  padding-left: 15px;
+
+}
+.container .bottom li a {
+  color: #000;
+  display: inline;
+  text-decoration: none;
+}
+
+.container .bottom ul {
+  display: inline;
+}
+ul.left {
+  float: left;
+  margin-left: 10px;
+}
+ul.right {
+  float: right;
+  position: fixed;
+  right: 0;
 }
