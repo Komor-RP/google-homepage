@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 ul, li, a, p {
   margin:0;
   padding:0;
@@ -34,6 +37,7 @@ p, a, li {
 }
 .top ul.right {
   float: right;
+  padding-right: 30px;
 }
 .top ul.right div.first {
   display: inline-block;
@@ -92,19 +96,30 @@ p, a, li {
   margin: 0 auto;
   display: block;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 180px;
 }
 .middle .picture img {
   text-align: center;
-  width: 25%;
-  min-width: 380px;
+  width: 272px;
+  margin-bottom: 20px;
 }
 .middle .search {
   text-align: center;
 }
 .middle .search input {
-  width: 500px;
+  width: 559px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.16);
+  font-size: 16px;
 }
+.middle .search input:hover {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+}
+.middle .search input:focus {
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
+}
+
 .middle .searchButtons {
   text-align: center;
   padding-top: 30px;
@@ -116,6 +131,7 @@ p, a, li {
   border-radius: 2px;
   color: #757575;
   border: 1px solid #f2f2f2;
+  font-weight: 700;
 }
 .middle .searchButtons button:hover {
   border: 1px solid #c6c6c6;
@@ -127,19 +143,29 @@ p, a, li {
 .container .bottom {
   position: fixed;
   bottom:0;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+.container .bottom ul {
+  margin-bottom: 0;
+}
+.container .bottom ul.right {
+  padding-right: 30px;
 }
 .container .bottom li{
-  color: #000;
   display: inline;
-  padding-left: 15px;
-
+  padding-left: 27px;
 }
 .container .bottom li a {
-  color: #000;
+  color: #666;
   display: inline;
   text-decoration: none;
+  line-height: 40px;
 }
-
+.container .bottom li a:hover{
+  text-decoration: underline;
+}
 .container .bottom ul {
   display: inline;
 }
